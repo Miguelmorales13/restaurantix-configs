@@ -1,0 +1,44 @@
+server:
+    port: 8002
+spring:
+  datasource:
+      password:
+      url: jdbc:postgresql://localhost:5432/restaurantix
+      username: postgres
+    jpa:
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      hibernate:
+        ddl-auto: update
+    mail:
+      host: smtp.gmail.com
+      password: rkruzyzziwprwcho
+      username: restaurantix20@gmail.com
+      port: 587
+      properties:
+        mail:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+swagger:
+  title: products-services
+  description: nuevo
+  version: @project.version@
+  host: localhost
+
+feign:
+  client:
+    config:
+      services-security:
+        loggerLevel: FULL
+logging:
+  level:
+    org:
+      hibernate:
+        sql: DEBUG
+        type: DEBUG
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
