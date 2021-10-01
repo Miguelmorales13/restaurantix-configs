@@ -1,5 +1,5 @@
 server:
-    port: 8001
+    port: 8004
 spring:
   datasource:
       password:
@@ -21,16 +21,11 @@ spring:
             starttls:
               enable: true
 swagger:
-  title: security-services
+  title: enterprices-services
   description: nuevo
   version: @project.version@
   host: localhost
 
-feign:
-  client:
-    config:
-      services-security:
-        loggerLevel: FULL
 logging:
   level:
     org:
