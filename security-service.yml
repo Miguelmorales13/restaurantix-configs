@@ -24,7 +24,7 @@ spring:
 swagger:
   title: security-services
   description: nuevo
-  version: @project.version@
+  version: 0.0.1
   host: localhost
 
 feign:
