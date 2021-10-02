@@ -1,25 +1,25 @@
 server:
-    port: 8003
+  port: 8003
 spring:
   datasource:
-      password:
-      url: jdbc:postgresql://localhost:5432/restaurantix
-      username: postgres
-    jpa:
-      database-platform: org.hibernate.dialect.PostgreSQLDialect
-      hibernate:
-        ddl-auto: update
-    mail:
-      host: smtp.gmail.com
-      password: rkruzyzziwprwcho
-      username: restaurantix20@gmail.com
-      port: 587
-      properties:
-        mail:
-          smtp:
-            auth: true
-            starttls:
-              enable: true
+    password:
+    url: jdbc:postgresql://localhost:5432/restaurantix
+    username: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    password: rkruzyzziwprwcho
+    username: restaurantix20@gmail.com
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 swagger:
   title: orders-services
   description: nuevo
