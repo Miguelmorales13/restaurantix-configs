@@ -2,7 +2,7 @@ server:
   port: 8002
 spring:
   datasource:
-    password:
+    password: postgres
     url: jdbc:postgresql://localhost:5432/restaurantix
     username: postgres
   jpa:
